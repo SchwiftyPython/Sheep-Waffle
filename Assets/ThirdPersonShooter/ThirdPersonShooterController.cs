@@ -38,6 +38,10 @@ public class ThirdPersonShooterController : MonoBehaviour {
             mouseWorldPosition = raycastHit.point;
             hitTransform = raycastHit.transform;
         }
+        else
+        {
+            mouseWorldPosition = ray.GetPoint(10);
+        }
 
         if (starterAssetsInputs.aim) {
             aimVirtualCamera.gameObject.SetActive(true);
