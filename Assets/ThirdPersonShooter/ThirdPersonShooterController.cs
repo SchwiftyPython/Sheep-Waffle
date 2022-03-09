@@ -41,6 +41,7 @@ public class ThirdPersonShooterController : MonoBehaviour {
         else
         {
             mouseWorldPosition = ray.GetPoint(10);
+            debugTransform.position = ray.GetPoint(10);
         }
 
         if (starterAssetsInputs.aim) {
